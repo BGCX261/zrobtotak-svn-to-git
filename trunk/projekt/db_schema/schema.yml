@@ -1,0 +1,47 @@
+﻿# config/schema.yml
+propel:
+  category:
+    id:           ~
+    name:         { type: varchar(255), required: true, index: unique }
+    slug:         { type: varchar(255), required: true, index: unique }
+    description:  { type: longvarchar, required: false }
+    image:        { type: varchar(255) }
+    categoryup_id: {type: integer, foreignTable: advice, foreignReference: id, required: false, onDelete: cascade, onUpdate: cascade }
+
+
+  tags:
+    id:           ~
+    names:        { type: varchar(255), required: true }
+    advice_id:    { type: integer, foreignTable: advice, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+
+
+  images:
+    id:           ~
+    url:          { type: varchar(255), required: true}
+    text:         { type: varchar(400), require: false}
+    advice_id:    { type: integer, foreignTable: advice, foreignReference: id, require: true,  onDelete: cascade, onUpdate: cascade }
+
+
+  comments:
+    id:           ~
+    created_at:   ~
+    text:        { type: longvarchar, require: false}
+    rating:      { type: smallint, require: false }
+    advice_id:   { type: integer, foreignTable: advice, foreignReference: id, require: true,  onDelete: cascade, onUpdate: cascade }
+
+
+  advice:
+    id:           ~
+    slug:         { type: varchar(400), required:true }
+    rating:       { type: smallint, default: 0}
+    description:  { type: longvarchar, required: false }
+    instruction:  { type: longvarchar, required: false }
+    created_at:   ~
+    active:       { type: boolean, default: false }
+    movie:        { type: varchar(400), required: false }
+    level:        { type: smallint }
+    visited:      { type: integer, require: true, default: 1}
+    title:        { type: varchar(400), required: true }
+    category_id:  { type: integer, foreignTable: category, foreignReference: id,  onDelete: setnull, onUpdate: setnull }
+    category_upcategory_id : { type: integer, foreignTable: category, foreignReference: categoryup_id,  onDelete: setnull, onUpdate: setnull }
+    

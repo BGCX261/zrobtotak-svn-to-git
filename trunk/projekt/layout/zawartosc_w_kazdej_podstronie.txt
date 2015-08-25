@@ -1,0 +1,41 @@
+<div class="main_container_wrapper">
+           
+                  
+                  <!--lewa strona strony, tj menu i inne-->
+                  <div id="all_left_site_part">
+                  <div id="menu">
+	<div id="menubody">
+        <ul id="menulist">
+            <li class="general_category"><a href="#">¿¿Position 1</a></li>
+            <li class="general_category"><a href="#">Position</a></li>
+            
+            <li class="category"><a href="#">Podkategoria 1</a></li>
+            <li class="category"><a href="#">Podgategoria 2</a></li>
+            <li class="category_underlink"><a href="#">Podgategoria 4</a></li>
+            <li class="category"><a href="#">Podgategoria 5</a></li>
+            
+            <li class="general_category"><a href="#">Position 3</a></li>
+            <li class="general_category"><a href="#">Position 4</a></li>
+            <li class="general_category"><a href="#">Position 5</a></li>
+    	</ul>
+    </div>
+<div id="menubottom"></div>
+</div>
+                  
+                  </div>
+                  <!--Koniec lewej czesci strony-->
+                  
+                  
+                  <!--srodkowa czesc strony aktualnosci i inee rzeczy-->
+                  <div id="all_middle_site_part">
+                  </div>
+                  <!--koniec srodkowej czesci-->
+                  
+                  <!-- prawy czesc strony-->
+                  <div id="all_right_site_part">
+                  
+                  </div>
+                  <!--koniec prawej strony-->
+                  <div style="clear:both" class="clear_after_flow"></div>
+                  
+             </div> 

@@ -1,0 +1,63 @@
+# config/schema.yml
+propel:
+  categories:
+    id:           ~
+    name:         { type: varchar(255), required: true, index: unique }
+    slug:         { type: varchar(255), required: true, index: unique }
+    description:  { type: longvarchar, required: false }
+    image:        { type: varchar(255) }
+    categoryup_id: {type: integer, foreignTable: advice, foreignReference: id, required: false, onDelete: cascade, onUpdate: cascade }
+
+
+  tags:
+    id:           ~
+    names:        { type: varchar(255), required: true }
+    advice_id:    { type: integer, foreignTable: advice, foreignReference: id, required: true, onDelete: cascade, onUpdate: cascade }
+
+
+  images:
+    id:           ~
+    url:          { type: varchar(255), required: true}
+    text:         { type: varchar(400), require: false}
+    advice_id:    { type: integer, foreignTable: advice, foreignReference: id, require: true,  onDelete: cascade, onUpdate: cascade }
+
+
+  comments:
+    id:           ~
+    created_at:   ~
+    text:        { type: longvarchar, require: false}
+    rating:      { type: smallint, require: false }
+    advice_id:   { type: integer, foreignTable: advice, foreignReference: id, require: true,  onDelete: cascade, onUpdate: cascade }
+    user_id:     { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: false, onDelete: setnull }
+
+
+  advice:
+    id:           ~
+    slug:         { type: varchar(400), required:true }
+    rating:       { type: smallint, default: 0}
+    description:  { type: longvarchar, required: false }
+    instruction:  { type: longvarchar, required: false }
+    created_at:   ~
+    active:       { type: boolean, default: false }
+    movie:        { type: varchar(400), required: false }
+    level:        { type: smallint }
+    visited:      { type: integer, require: true, default: 1}
+    title:        { type: varchar(400), required: true }
+    category_id:  { type: integer, foreignTable: categories, foreignReference: id,  onDelete: setnull, onUpdate: setnull }
+    category_upcategory_id : { type: integer, foreignTable: categories, foreignReference: categoryup_id,  onDelete: setnull, onUpdate: setnull }
+    user_id:     { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade }
+
+sf_guard_user_profile:
+  _attributes: { phpName: sfGuardUserProfile }
+  id:
+  user_id:     { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade }
+  first_name:  varchar(20)
+  last_name:   varchar(20)
+  birthday:    date
+  email:       { type: varchar(40), require: true }
+  city:        {type: varchar(30), require: false }
+  image:       {type: varchar(40), require: false }
+  descrypt:    { type: longvarchar, require: false }
+  level:       { type: smallint, require: false }
+
+

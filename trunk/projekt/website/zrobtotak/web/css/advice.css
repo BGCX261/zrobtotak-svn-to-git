@@ -1,0 +1,125 @@
+@charset "utf-8";
+div#advice_wrapper, div#advice_wrapper #advice_upper_slicer, div#advice_wrapper #advice_bootom_slicer, div#advice_wrapper #advice_heading_wrapper, div#advice_wrapper #left_part_advice_head, div#advice_wrapper #right_part_advice_head, div#advice_wrapper #adivice_head_cleaner, div#advice_wrapper #left_part_advice_head #advice_tittle, div#advice_wrapper #left_part_advice_head #desc_short_text, div#advice_insturction_wrapper #instruction_text, div#advice_wrapper #left_part_advice_head .short_desc_wrapper #short_desc_heading, div#advice_wrapper #left_part_advice_head .short_desc_wrapper #short_desc_content , div#advice_wrapper #left_part_advice_head .short_desc_wrapper #short_desc_bottom, div#right_part_advice_head h4, div#right_part_advice_head, div#right_part_advice_head div, div #advice_insturction_wrapper, div#advice_insturction_wrapper #instruction_header_slice, div#advice_insturction_wrapper #instruction_bottom, div #instruction_right_side #instruction_need_content, body, #instruction_need_content, #instruction_need_head, #instruction_need_content p     {margin:0; padding:0;}
+
+
+div#advice_wrapper{
+	width:669px;
+}
+div#advice_wrapper #advice_upper_slicer
+{
+	height:11px;
+	background:url(../images/advice/advice_heading.png) no-repeat;
+}
+
+div#advice_wrapper #advice_bootom_slicer{
+height:13px;
+background:url(../images/advice/advice_bottom.png) no-repeat;
+}
+
+div#advice_wrapper #advice_heading_wrapper{
+background:url(../images/advice/advice_slice.png) repeat-y;	
+}
+
+div#advice_wrapper #left_part_advice_head{
+width: 529px;
+float:left;
+}
+div#advice_wrapper #right_part_advice_head
+{
+	width:140px;
+	float:left;
+}
+div#advice_wrapper #adivice_head_cleaner{
+clear:both;
+}
+div#advice_wrapper #left_part_advice_head #advice_tittle
+{
+	color:#FFF;
+	font-family:"Times New Roman", Times, serif;
+	font-size:20px;
+	display:block;
+	padding-left:15px;
+	font-weight:600;
+	padding-right:15px;
+}
+
+
+div#advice_wrapper #left_part_advice_head #desc_short_text, div#advice_insturction_wrapper #instruction_text{
+display:block;	
+padding-left:22px;
+font-size:16px;
+color:#FFF;
+padding-top:7px;
+padding-bottom:3px;
+}
+div#advice_wrapper #left_part_advice_head .short_desc_wrapper #short_desc_heading{
+	height:8px;
+	background:url(../images/advice/advice_short_desc_slice_head.png)
+}
+
+div#advice_wrapper #left_part_advice_head .short_desc_wrapper #short_desc_content{
+	background:url(../images/advice/advice_short_desc_slice.png) repeat-y;
+	padding-left:30px;
+	padding-right:23px;
+	
+}
+div#advice_wrapper #left_part_advice_head .short_desc_wrapper #short_desc_bottom{
+	background:url(../images/advice/advice_short_desc_bottom.png) no-repeat;
+	height:8px;
+}
+div#right_part_advice_head h4{
+	display:inline;
+	font-size:13px;
+}
+div#right_part_advice_head
+{
+	padding-top:5px;
+	color:#FFF;
+}
+div#right_part_advice_head div{
+padding-top:4px;
+}
+div #advice_insturction_wrapper
+{
+	background:url(../images/advice/advice_slice.png) repeat-y;
+}
+
+div#advice_insturction_wrapper #instruction_header_slice{
+height:8px;
+background:url(../images/advice/advice_instruct_heading.png) no-repeat;
+}
+div#advice_insturction_wrapper #instruction_bottom{
+background:url(../images/advice/instruction_bottom.png) no-repeat;
+height:17px;
+}
+div .advice_instruction_content{
+background:url(../images/advice/advice_instruction_slice.png) repeat-y;
+}
+div .advice_instruction_content #instruction_right_side{
+width:171px;
+float:right;
+margin-right:20px
+}
+div .advice_instruction_content #instruction_left_side{
+	float:left;
+	padding-left:30px;
+	padding-right:5px;
+	width:434px;}
+	
+div #instruction_right_side #instruction_need_head{
+height:29px;
+background:url(../images/advice/what_need_heading.png) no-repeat;
+
+}
+
+div #instruction_right_side #instruction_need_bottom{
+height:13px;
+background:url(../images/advice/what_need_buttom.png) no-repeat;
+}
+
+div #instruction_right_side #instruction_need_content{
+	background:url(../images/advice/what_need_slice.png) repeat-y;
+padding-left:7px;
+padding-right:7px;
+color:#888;
+}

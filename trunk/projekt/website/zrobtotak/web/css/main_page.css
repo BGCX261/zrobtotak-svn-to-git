@@ -1,0 +1,30 @@
+@charset "utf-8";
+div.main_container_wrapper{
+clear:both;
+}
+div.main_container_wrapper #all_left_site_part{
+margin-left:10px;
+width:225px;
+float:left;
+	
+}
+div.main_container_wrapper #all_middle_site_part{
+width:454px;
+margin-left:14px;
+margin-right:14px;
+float:left;
+}
+
+div.main_container_wrapper #all_right_site_part{
+width:225px;
+float:right;
+margin-right:10px
+}
+
+div.main_container_wrapper #right_column_advice_wrapper
+{
+width:669px;
+float:right;
+margin-left:19px;
+margin-right:20px;
+}

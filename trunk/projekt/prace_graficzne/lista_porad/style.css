@@ -1,0 +1,165 @@
+@charset "utf-8";
+div#advice_list, div#advice_list #adivice_list_heading, div#advice_list #advice_bottom, div#advice_list #advice_list_content, div#advice_list #advice_list_content ul {margin:0; padding:0;
+}
+div#advice_list{
+	width:454px;
+}
+div#advice_list #adivice_list_heading{
+height:36px;
+background:url(images/advice_list_heading.png) no-repeat;
+}
+
+div#advice_list #advice_bottom{
+height:15px;
+background:url(images/list_advice_bottom.png) no-repeat;
+}
+
+div#advice_list #advice_list_content {
+color:#606060;
+text-decoration:none;
+font:12px Arial,Tahoma,Verdana,Helvetica,sans-serif;
+}
+div#advice_list #advice_list_content a{
+	text-decoration:none;
+	color:#606060;
+text-decoration:none;
+font:12px Arial,Tahoma,Verdana,Helvetica,sans-serif;
+}
+div#advice_list #advice_list_content a:hover{
+color:#DAA520;
+text-decoration:none;
+font:12px Arial,Tahoma,Verdana,Helvetica,sans-serif;
+}
+
+div#advice_list #advice_list_content ul{
+padding-top:3px;
+padding-bottom:4px;
+}
+div#advice_list #advice_list_content ul.even{
+list-style-type:none;
+background:url(images/list_adcive_blue_slicer.png) repeat-y;
+}
+
+div#advice_list #advice_list_content ul.odd{
+list-style-type:none;
+background:url(images/advice_list_wb_slicer.png) repeat-y;
+}
+
+div#advice_list #advice_list_content ul li{
+display:block;	
+}
+div#advice_list #advice_list_content ul #advice_name{
+	padding-left:10px;
+	width:245px;
+	float:left;
+}
+div#advice_list #advice_list_content ul #advice_note{
+	width:56px;
+	text-align:center;
+	float:left;
+}
+
+div#advice_list #advice_list_content ul #advice_count
+{
+	width:47px;
+	text-align:center;
+	float:left;
+}
+div#advice_list #advice_list_content ul #advice_author{
+width:86px;
+padding-right:10px;
+text-align:center;
+float:right;
+}
+div#advice_list #advice_list_content #advice_list_clear
+{
+	clear:both;
+}
+div#advice_list #paginator{
+text-align:center;
+width:auto;
+background:url(images/list_adcive_blue_slicer.png) repeat-y;
+padding-top:7px;
+}
+
+
+
+div#advice_list #name_head, div#advice_list #note_head, div#advice_list #count_head, div#advice_list #author_head
+{
+	float:left;
+	padding-top:10px;
+	color:#FFF;
+	font-weight:700;
+	font-size:14px;
+	text-align:center;
+}
+
+div#advice_list #adivice_list_heading #name_head{
+		padding-left:5px;
+	width:250px;
+	
+}
+
+div#advice_list #adivice_list_heading #note_head{
+	padding-top:10px;
+	width:56px;
+}
+div#advice_list #adivice_list_heading #count_head{
+width:47px;
+}
+
+div#advice_list #adivice_list_heading #author_head
+{
+width:86px;
+padding-right:10px;
+}
+
+
+/* -------------------------------------------- */
+/* 		Pagination: Clean						*/
+/* -------------------------------------------- */
+	#pagination-clean {border:0; margin:0; padding:0;}
+	#pagination-clean li{
+		border:0; margin:0; padding:0;
+		font-size:11px;
+		list-style:none;
+	}
+	#pagination-clean li, #pagination-clean a{
+		border-right:solid 1px #DEDEDE;
+		margin-right:2px;
+	}
+	#pagination-clean .previous-off,
+	#pagination-clean .next-off {
+		color:#888888;
+		display:block;
+		float:left;
+		font-weight:bold;
+		padding:3px 4px;
+		border:none;
+	}	
+	#pagination-clean .next a,
+	#pagination-clean .previous a{
+		border:none;
+		font-weight:bold;
+		float:left;
+	}	
+	#pagination-clean .active{
+		color:#000000;
+		font-weight:bold;
+		display:block;
+		float:left;
+		padding:4px 6px;
+	}
+	#pagination-clean a:link, 
+	#pagination-clean a:visited {
+		color:#0e509e;
+		display:block;
+		float:left;
+		padding:3px 6px;
+		text-decoration:underline;
+	}
+	#pagination-clean a:hover{
+		color:#FFF;
+		color:#FFF !important;
+		text-decoration:underline !important;
+	}

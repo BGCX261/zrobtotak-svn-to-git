@@ -1,0 +1,958 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="portal edukacyjny">
+<meta name="description" content="Twój portal edukacyjny!">
+<meta name="title" content="Literka.pl">
+<meta name="robots" content="index, follow">
+
+<title>Literka.pl</title>
+
+
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/css/ie6.css" media="screen"><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="/css/ie7.css" media="screen"><![endif]-->
+<script type="text/javascript">
+
+function changeThis(obj){
+    if(!obj.tmpvalue){
+        obj.tmpvalue=obj.value;
+    }
+    if(obj.value==obj.tmpvalue){
+        obj.value="";
+    }
+}
+
+function changeThisBack(obj){
+     if(obj.value==""){
+        obj.value=obj.tmpvalue;
+    }
+}
+
+</script>
+
+<script language="javascript"><!--
+	var cName = 'ng4adnetcook';
+	var nSrc = 'http://adnet.nuggad.net/rc?nuggn=413847152'
+	var na_prof = '';function rC(){if(document.cookie){tV = document.cookie; if(tV.indexOf(cName+"=")!=-1){ p1 = tV.indexOf(cName+"=");p2 = tV.indexOf(",cookEnd");na_prof = tV.slice(p1+cName.length+1,p2);}}}  
+	rC();
+
+function nuggTopDomain(domain) { if(domain == undefined) domain = document.location.host; return document.location.host.replace(/([a-zA-Z0-9_-]+\.)*([a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+)$/, '.$2'); }
+function setNuggCookie(N,V,L){now=new Date();tout=new Date(now.getTime()+L*86400000);document.cookie=N+"="+V+",cookEnd;expires="+tout.toGMTString()+";domain="+nuggTopDomain() + ";path=/;";};
+
+function inNugg() { 
+	if (arguments.callee.done) return; arguments.callee.done = true;if (_timer) {clearInterval(_timer);_timer = null;};if( document.createElement && document.childNodes ) {var nSc = document.createElement('script');nSc.setAttribute('src',nSrc);nSc.setAttribute('type','text/javascript');document.getElementsByTagName('head')[0].appendChild(nSc); }};if (document.addEventListener) {document.addEventListener("DOMContentLoaded", inNugg, false);};if (/WebKit/i.test(navigator.userAgent)) {var _timer = setInterval(function() {if (/loaded|complete/.test(document.readyState)) {inNugg();}}, 10);}
+	/*@cc_on @*/
+	/*@if (@_win32)
+		document.write("<script id=__ie_onload defer src=javascript:void(0)><\/script>");
+		var script = document.getElementById("__ie_onload");
+		script.onreadystatechange = function() {
+			if (this.readyState == "complete") {
+				inNugg(); // 
+			}
+		};
+	/*@end @*/
+	window.onload = inNugg;
+--></script>
+
+<script type="text/javascript" src="Literka.pl_pliki/jquery-1.js"></script>
+<script type="text/javascript" src="Literka.pl_pliki/jquery_004.js"></script>
+<script type="text/javascript" src="Literka.pl_pliki/jquery_003.js"></script>
+<script type="text/javascript" src="Literka.pl_pliki/my.js"></script>
+<script type="text/javascript" src="Literka.pl_pliki/jquery.js"></script>
+<script type="text/javascript" src="Literka.pl_pliki/jquery_005.js"></script>
+<script type="text/javascript" src="Literka.pl_pliki/jquery_002.js"></script>
+<script type="text/javascript" src="Literka.pl_pliki/date.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" 
+href="Literka.pl_pliki/screen.css">
+<link rel="stylesheet" type="text/css" media="screen" 
+href="Literka.pl_pliki/my_forms.css">
+<link rel="stylesheet" type="text/css" media="screen" 
+href="Literka.pl_pliki/date_picker.css">
+<link rel="stylesheet" type="text/css" media="screen" 
+href="Literka.pl_pliki/jquery.css">
+<link rel="stylesheet" type="text/css" media="screen" 
+href="Literka.pl_pliki/default.css">
+<script type="text/javascript" src="Literka.pl_pliki/rc"></script></head><body>
+
+<div id="wrapAll" class="clearfix">
+
+
+	<div id="header" class="clearfix">
+
+		<div id="logo">	
+			<h1><a href="http://literka.pl/" title="Literka.pl - Twój portal 
+edukacyjny">Literka.pl</a></h1>
+		</div>
+
+    
+
+
+
+		<!-- box logowania -->
+		<div id="loginBox" class="clearfix">
+
+			<h3>Zaloguj się</h3>
+			<form action="/logowanie" method="post">
+				<fieldset class="row">
+					<input class="text" name="signin[username]" 
+onfocus="changeThis(this);" onblur="changeThisBack(this);" value="Login"
+ type="text">
+					<input class="text" name="signin[password]" 
+onfocus="changeThis(this);" onblur="changeThisBack(this);" value="Hasło"
+ type="password">
+					<a href="http://literka.pl/zapomniane_haslo" title="Zapomniałeś 
+loginu/hasła? Kliknij tutaj." class="retrieve"></a>
+					<input name="zaloguj" id="loginButton" value="Zaloguj" 
+src="Literka.pl_pliki/loginButton.png" type="image">
+				</fieldset>
+			</form>
+
+            <a class="basket buttonSm" title="Koszyk" 
+href="http://literka.pl/koszyk">Koszyk (0)</a>			
+			<ul class="register">
+				<li><a class="registerSubmit" href="http://literka.pl/rejestracja">Zarejestruj</a></li>
+				<li class="text"><a href="http://literka.pl/rejestracja">Nie masz 
+jeszcze konta?</a></li>
+			</ul>
+		</div>
+		<!-- END - box logowania -->
+				
+
+
+	</div>
+	<!-- nawigacja pozioma -->
+	<div id="navMain" class="clearfix">
+		<ul>
+			<li class="first clearfix" id="home"><a title="Strona główna" 
+href="http://literka.pl/"><span>Strona główna</span></a></li>
+			<li id="konspekty"><a title="Konspekty lekcji" 
+href="http://literka.pl/category/show/ct/3/id/889">Konspekty lekcji</a></li>
+			<li id="scenariusze"><a title="Scenariusze imprez" 
+href="http://literka.pl/category/show/ct/3/id/948">Scenariusze imprez</a></li>
+			<li id="testy"><a title="Testy i konkursy" 
+href="http://literka.pl/category/show/ct/3/id/910">Testy i konkursy</a></li>
+			<li id="inne"><a title="Inne Materiały" 
+href="http://literka.pl/category/show/ct/3/id/1108">Inne materiały</a></li>
+			<li id="forum"><a href="http://literka.pl/forum/index.php?sid=" 
+title="Forum">Forum</a></li>
+			<li id="shop"><a title="Sklep" href="http://literka.pl/sklep">Sklep</a></li>
+			<li class="last" id="publish"><a title="Publikuj" 
+href="http://literka.pl/publikuj">Publikuj</a></li>
+		</ul>
+	</div>
+	<!-- END - nawigacja pozioma -->	
+<div id="banner" class="clearfix">
+  
+      
+
+
+
+
+
+</div>	
+	
+	
+<div id="content" class="clearfix">
+
+	
+
+	
+		<!-- lewa kolumna -->
+		<div id="colLeft" class="clearfix">
+				
+			<div id="firstTimeButton">
+				<a title="Pierwszy raz na literce?" 
+href="http://literka.pl/czytaj/20/1">Pierwszy raz na literce?</a>			</div><!-- button "pierwszy raz na literce" -->
+			
+			<!-- nawigacja Centrum Awansu Zawodowego -->
+           
+<!-- nawigacja Centrum Awansu Zawodowego -->
+
+			<div id="navCAZ" class="box clearfix">
+				<h3><a title="Centrum Awansu Zawodowego" 
+href="http://literka.pl/lista/centrum_awansu_zawodowego/2">Centrum 
+Awansu Zawodowego</a></h3>
+				<ul>
+				
+    <li><a title="Nauczyciel stażysta" 
+href="http://literka.pl/kategoria/nauczyciel_stazysta/3/2"><span>&nbsp;</span>Nauczyciel
+ stażysta</a></li>
+    <li><a title="Nauczyciel kontraktowy" 
+href="http://literka.pl/kategoria/nauczyciel_kontraktowy/4/2"><span>&nbsp;</span>Nauczyciel
+ kontraktowy</a></li>
+    <li><a title="Nauczyciel mianowany" 
+href="http://literka.pl/kategoria/nauczyciel_mianowany/5/2"><span>&nbsp;</span>Nauczyciel
+ mianowany</a></li>
+    <li><a title="Dyrektor szkoły" 
+href="http://literka.pl/kategoria/dyrektor_szkoly/54/2"><span>&nbsp;</span>Dyrektor
+ szkoły</a></li>
+    <li><a title="Opiekun stażu" 
+href="http://literka.pl/kategoria/opiekun_stazu/847/2"><span>&nbsp;</span>Opiekun
+ stażu</a></li>
+    <li><a title="Teczka awansu zawodowego" 
+href="http://literka.pl/kategoria/teczka_awansu_zawodowego/79/2"><span>&nbsp;</span>Teczka
+ awansu zawodowego</a></li>
+    <li><a title="Kuratoria" 
+href="http://literka.pl/kategoria/kuratoria/1114/2"><span>&nbsp;</span>Kuratoria</a></li>
+    <li><a title="Akty prawne" 
+href="http://literka.pl/kategoria/akty_prawne/80/2"><span>&nbsp;</span>Akty
+ prawne</a></li>
+    <li><a title="Kwalifikacje nauczycieli" 
+href="http://literka.pl/kategoria/kwalifikacje_nauczycieli/1159/2"><span>&nbsp;</span>Kwalifikacje
+ nauczycieli</a></li>
+    <li><a title="Czas pracy nauczycieli" 
+href="http://literka.pl/kategoria/czas_pracy_nauczycieli/1158/2"><span>&nbsp;</span>Czas
+ pracy nauczycieli</a></li>				</ul>
+			</div>
+			
+<!-- END - nawigacja Centrum Awansu Zawodowego -->			<!-- END - nawigacja Centrum Awansu Zawodowego -->
+			
+			<!-- newsletter -->
+      <br>
+      <center>
+      Polecamy:
+      <br>
+      <a href="http://eduskrypt.pl/" title="" target="_blank"><img 
+src="Literka.pl_pliki/button_eduskrypt_120x60_1.jpg"></a>
+      </center>
+      <br><br>
+			<div id="newsletter" class="box">
+				<h4 class="boxTitle">Newsletter</h4>
+				<p>Jeśli chcesz otrzymywać najnowsze informacje z naszego serwisu, 
+zapisz się na listę mailingową.</p>
+				<form action="/user/subscribe" method="post">
+					<fieldset>
+						<div class="row clearfix">
+							<input onfocus="changeThis(this);" onblur="changeThisBack(this);"
+ class="text" name="email" value="Twój e-mail" type="text">
+							<input class="saveButton" title="Zapisz" 
+src="Literka.pl_pliki/saveButton.png" value="Zapisz" type="image">
+						</div>
+					</fieldset>
+				</form>
+			</div>
+			<!-- END - newsletter -->
+			
+<div id="skyscraper">
+<!--/* OpenX Javascript Tag v2.8.0 */-->
+
+<!--/*
+  * The backup image section of this tag has been generated for use on a
+  * non-SSL page. If this tag is to be placed on an SSL page, change the
+  *   'http://literka.pl/openx/www/delivery/...'
+  * to
+  *   'https://literka.pl/openx/www/delivery/...'
+  *
+  * This noscript section of this tag only shows image banners. There
+  * is no width or height in these banners, so if you want these tags to
+  * allocate space for the ad before it shows, you will need to add this
+  * information to the <img> tag.
+  *
+  * If you do not want to deal with the intricities of the noscript
+  * section, delete the tag (from <noscript>... to </noscript>). On
+  * average, the noscript tag is called from less than 1% of internet
+  * users.
+  */-->
+  
+<script type="text/javascript"><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://literka.pl/openx/www/delivery/ajs.php':'http://literka.pl/openx/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=1");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><script type="text/javascript" src="Literka.pl_pliki/ajs.php"></script><noscript><a href='http://literka.pl/openx/www/delivery/ck.php?n=a7e2b814&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://literka.pl/openx/www/delivery/avw.php?zoneid=1&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a7e2b814' border='0' alt='' /></a></noscript>
+
+
+
+<!--/* OpenX Javascript Tag v2.8.0 */-->
+
+<!--/*
+  * The backup image section of this tag has been generated for use on a
+  * non-SSL page. If this tag is to be placed on an SSL page, change the
+  *   'http://literka.pl/openx/www/delivery/...'
+  * to
+  *   'https://literka.pl/openx/www/delivery/...'
+  *
+  * This noscript section of this tag only shows image banners. There
+  * is no width or height in these banners, so if you want these tags to
+  * allocate space for the ad before it shows, you will need to add this
+  * information to the <img> tag.
+  *
+  * If you do not want to deal with the intricities of the noscript
+  * section, delete the tag (from <noscript>... to </noscript>). On
+  * average, the noscript tag is called from less than 1% of internet
+  * users.
+  */-->
+
+<script type="text/javascript"><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://literka.pl/openx/www/delivery/ajs.php':'http://literka.pl/openx/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=4");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><script type="text/javascript" src="Literka.pl_pliki/ajs_002.php"></script><div
+ id="ox_a1b8c545f2211926a93adcf8d2127bd8" style="display: inline;"><embed
+ type="application/x-shockwave-flash" 
+src="Literka.pl_pliki/88ab62e4e0d84aa926e686d5b09b4b01.swf" style="" 
+id="Advertisement" name="Advertisement" quality="high" 
+allowscriptaccess="always" 
+flashvars="alink1=http%3A%2F%2Fliterka.pl%2Fopenx%2Fwww%2Fdelivery%2Fck.php%3Foaparams%3D2__bannerid%3D11__zoneid%3D4__cb%3D74d26190af__oadest%3Dhttp%253A%252F%252Fliterka.pl%252Fkarta_produktu%252F17%253Fa%253D21%252F10%2526f%253Dliterka.pl&amp;atar1=_blank"
+ width="200" height="600"></div>
+<script type="text/javascript"><!--// <![CDATA[
+var ox_swf = new FlashObject('http://literka.pl/openx/www/images/88ab62e4e0d84aa926e686d5b09b4b01.swf', 'Advertisement', '200', '600', '9');
+ox_swf.addVariable('alink1', 'http%3A%2F%2Fliterka.pl%2Fopenx%2Fwww%2Fdelivery%2Fck.php%3Foaparams%3D2__bannerid%3D11__zoneid%3D4__cb%3D74d26190af__oadest%3Dhttp%253A%252F%252Fliterka.pl%252Fkarta_produktu%252F17%253Fa%253D21%252F10%2526f%253Dliterka.pl');
+ox_swf.addVariable('atar1', '_blank');
+ox_swf.addParam('allowScriptAccess','always');
+ox_swf.write('ox_a1b8c545f2211926a93adcf8d2127bd8');
+// ]]> --></script><div id="beacon_74d26190af" style="position: 
+absolute; left: 0px; top: 0px; visibility: hidden;"><img 
+src="Literka.pl_pliki/lg.gif" alt="" style="width: 0px; height: 0px;" 
+width="0" height="0"></div>
+<noscript><a href='http://literka.pl/openx/www/delivery/ck.php?n=abf3a3fa&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://literka.pl/openx/www/delivery/avw.php?zoneid=4&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=abf3a3fa' border='0' alt='' /></a></noscript>
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+			
+		</div>
+		<!-- END - lewa kolumna -->
+
+		<!-- środkowa kolumna -->
+		<div id="colMid" class="clearfix">
+
+
+
+
+
+			<!-- aktualności BOX -->
+			<div id="newsBox" class="clearfix box">
+					<ul class="boxTitle">
+						<li><h3><a href="http://literka.pl/kategoria/aktualnosci/1/1" 
+title="Aktualności">Aktualności</a></h3></li>
+						<li><p class="subtitle">Co słychać w szkolnym świecie</p></li>
+					</ul>
+				
+				<div class="boxContent clearfix">
+					<!-- główny news -->
+					
+															<div class="singleShortNews">
+					
+										<img class="shortNewsImg" alt="Uczniom należy zapewnić 
+możliwość dalszego kształcenia" src="Literka.pl_pliki/www_004.htm">     
+                                   
+						<h4 class=""><a title="Uczniom należy zapewnić możliwość dalszego 
+kształcenia" 
+href="http://literka.pl/3/38396/uczniom_nalezy_zapewnic_mozliwosc_dalszego_ksztalcenia">Uczniom
+ należy zapewnić możliwość dalszego kształcenia</a><span class="date">21
+ kwiecień 2010</span></h4>
+						<p class="">W przypadku likwidacji warsztatów szkolnych jednostki 
+samorządu terytorialnego mają obowiązek zapewnić korzystającym z ich 
+usług dalszą możliwość zdobywania umiejętności praktycznych — pisze 
+dzisiejsza Rzeczpospolita</p>
+						<a title="Zobacz więcej" class="seeMore" 
+href="http://literka.pl/3/38396/uczniom_nalezy_zapewnic_mozliwosc_dalszego_ksztalcenia">Czytaj
+ dalej</a>					</div>
+																																																																								
+			
+					<!-- END - główny news -->
+					
+					<!-- lista aktualności -->
+					<div class="newsList">
+						<ul class="shortList">
+						
+																									<li>
+					<a class="articleLink" title="Regulamin funduszu jest aktem prawa 
+miejscowego" 
+href="http://literka.pl/3/38395/regulamin_funduszu_jest_aktem_prawa_miejscowego">Regulamin
+ funduszu jest aktem prawa miejscowego</a><span class="date">21 kwiecień
+ 2010</span>
+					</li>
+																				<li>
+					<a class="articleLink" title="Opodatkowanie świadczeń urlopowych 
+dla nauczycieli" 
+href="http://literka.pl/3/38394/opodatkowanie_swiadczen_urlopowych_dla_nauczycieli">Opodatkowanie
+ świadczeń urlopowych dla nauczycieli</a><span class="date">21 kwiecień 
+2010</span>
+					</li>
+																				<li>
+					<a class="articleLink" title="Więcej pieniędzy za chorobę" 
+href="http://literka.pl/3/38393/wiecej_pieniedzy_za_chorobe">Więcej 
+pieniędzy za chorobę</a><span class="date">21 kwiecień 2010</span>
+					</li>
+																				<li>
+					<a class="articleLink" title="Czy za wpis na blogu pójdzie do 
+więzienia?" 
+href="http://literka.pl/3/38162/czy_za_wpis_na_blogu_pojdzie_do_wiezienia_">Czy
+ za wpis na blogu pójdzie do więzienia?</a><span class="date">23 marzec 
+2010</span>
+					</li>
+																				<li>
+					<a class="articleLink" title="Będzie pomoc na zakup podręczników" 
+href="http://literka.pl/3/38161/bedzie_pomoc_na_zakup_podrecznikow">Będzie
+ pomoc na zakup podręczników</a><span class="date">23 marzec 2010</span>
+					</li>
+																				<li>
+					<a class="articleLink" title="Kto wymaże dwóje z e- dziennika" 
+href="http://literka.pl/3/38129/kto_wymaze_dwoje_z_e_dziennika">Kto 
+wymaże dwóje z e- dziennika</a><span class="date">18 marzec 2010</span>
+					</li>
+															
+				        </ul>
+				        
+				        <a class="seeAll button" title="Zobacz wszystkie" 
+href="http://literka.pl/kategoria/aktualnosci/1/1">Zobacz wszystkie</a>	
+				 
+					</div>
+				</div>
+				
+				<!-- END - lista aktualności -->
+				
+			</div>
+			<!-- END - aktualności BOX -->
+			
+<br>
+
+			<!-- aktualności BOX -->
+			<div class="newsWeekBox">
+					<ul class="boxTitle">
+						<li><h3><a 
+href="http://literka.pl/category/show/url_title/aktualnosci/id/1/ct/1/type/topweek"
+ title="Aktualności">Temat tygodnia</a></h3></li>
+						<li><p class="subtitle">Godne uwagi</p></li>
+					</ul>
+				<div class="boxContent clearfix">
+					<!-- główny news -->
+					<div id="weekNews">
+          <a class="nius_title" title="Muzykoterapia jako pozytywna 
+profilaktyka aspołecznych zachowań" 
+href="http://literka.pl/3/38310/muzykoterapia_jako_pozytywna_profilaktyka_aspolecznych_zachowan">Muzykoterapia
+ jako pozytywna profilaktyka aspołecznych zachowań</a>          <br><br>
+          Muzykoterapia jest najczęściej wykorzystywana jako metoda 
+wspomagająca, lub jedna z najskuteczniejszych u małych dzieci, w 
+oddziaływaniach, których podstawowym elementem jest praca nad emocjami. 
+         <br><br><br>
+          
+          <a class="seeMoreNoFloat" title="Zobacz wszystkie w archiwum" 
+href="http://literka.pl/category/show/url_title/aktualnosci/id/1/ct/1/type/topweek">Zobacz
+ wszystkie w archiwum »</a>          <a class="seeAll button" 
+title="Czytaj dalej" 
+href="http://literka.pl/3/38310/muzykoterapia_jako_pozytywna_profilaktyka_aspolecznych_zachowan">Czytaj
+ dalej</a>          </div>
+					<!-- END - główny news -->
+				</div>
+			</div>
+			<!-- END - aktualności BOX -->
+			<br><br>
+
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
+codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
+ width="480" height="215">
+<param name="movie" value="images/adToolBox.swf">
+<param name="quality" value="high">
+<param name="bgcolor" value="#FFFFFF">
+<embed src="Literka.pl_pliki/adToolBox.swf" quality="high" 
+bgcolor="#FFFFFF" type="application/x-shockwave-flash" 
+pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"
+ width="480" height="215">
+</object>
+<br>
+
+
+			<!-- aktualności BOX -->
+			<div id="blogBox" class="box clearfix">
+					<ul class="boxTitle">
+						<li><h3><a href="http://literka.pl/kategoria/aktualnosci/39/1" 
+title="Blog z pokoju nauczycielskiego">Blog z pokoju nauczycielskiego</a></h3></li>
+						<li><p class="subtitle">Czyli o naszej pasji</p></li>
+					</ul>
+				
+				<div class="boxContent clearfix">
+					<!-- główny news -->
+					
+					
+					<div class="singleShortNews">
+					
+					<img class="shortNewsImg" alt="Katarzyna Droga" 
+src="Literka.pl_pliki/www_005.htm">          <br>          
+          <i>Fot. Zosia Zija</i>
+          <br> 
+						<h4>Kronikę prowadzi Katarzyna Droga</h4>
+						<p>Kronikę prowadzi Katarzyna Droga
+Polonistka z wykształcenia
+Redaktor i pedagog z zawodu
+Optymistka i człowiek pióra z wyboru
+
+Była redaktor naczelna pisma edukacyjnego "Cogito". Obecnie redaktor 
+naczelna Magazynu Psychologicznego "SENS".</p>
+						<a title="Zobacz więcej" class="seeMore" 
+href="http://literka.pl/czytaj/49/1">Czytaj dalej</a>					</div>
+					
+					
+					<!-- END - główny news -->
+					
+					<!-- lista aktualności -->
+					<div class="newsList">
+						<ul class="shortList">
+						
+										
+					<li>
+					<a class="articleLink" title="Egzamin i szczęśliwa  7" 
+href="http://literka.pl/3/38440/egzamin_i_szczesliwa_7">Egzamin i 
+szczęśliwa  7</a><span class="date">26 kwiecień 2010</span>
+					</li>
+				
+										
+					<li>
+					<a class="articleLink" title="Ciąża w szkole" 
+href="http://literka.pl/3/38404/ciaza_w_szkole">Ciąża w szkole</a><span 
+class="date">22 kwiecień 2010</span>
+					</li>
+				
+										
+					<li>
+					<a class="articleLink" title="Głupie tematy wychowawczych" 
+href="http://literka.pl/3/38370/glupie_tematy_wychowawczych">Głupie 
+tematy wychowawczych</a><span class="date">19 kwiecień 2010</span>
+					</li>
+				
+										
+					<li>
+					<a class="articleLink" title="Biedne dzieci nauczycieli!" 
+href="http://literka.pl/3/38345/biedne_dzieci_nauczycieli_">Biedne 
+dzieci nauczycieli!</a><span class="date">15 kwiecień 2010</span>
+					</li>
+				
+										
+					<li>
+					<a class="articleLink" title="Pensja 10 tysięcy?" 
+href="http://literka.pl/3/38320/pensja_10_tysiecy_">Pensja 10 tysięcy?</a><span
+ class="date">13 kwiecień 2010</span>
+					</li>
+				
+										
+					<li>
+					<a class="articleLink" title="Sprawdzian klas VI!" 
+href="http://literka.pl/3/38311/sprawdzian_klas_vi_">Sprawdzian klas VI!</a><span
+ class="date">09 kwiecień 2010</span>
+					</li>
+				
+										
+					<li>
+					<a class="articleLink" title="Sytuacja życiowa nauczyciela" 
+href="http://literka.pl/3/38289/sytuacja_zyciowa_nauczyciela">Sytuacja 
+życiowa nauczyciela</a><span class="date">08 kwiecień 2010</span>
+					</li>
+				
+										
+				        </ul>
+				        
+				        <a class="seeAll button" title="Zobacz wszystkie" 
+href="http://literka.pl/kategoria/aktualnosci/39/1">Zobacz wszystkie</a>
+					 
+					</div>
+				</div>
+				
+				<!-- END - lista aktualności -->
+				
+			</div>
+			<!-- END - aktualności BOX -->
+			
+
+
+
+
+
+
+			<!-- Ekspert odpowiada BOX -->
+			<div id="expertBox" class="box">
+				
+					<ul class="boxTitle">
+						<li><h3><a href="http://literka.pl/zapytaj_eksperta" 
+title="Ekspert odpowiada">Ekspert odpowiada</a></h3></li>
+						<li><p class="subtitle">Koło ratunkowe każdego nauczyciela</p></li>
+					</ul>
+					<div class="boxContent clearfix">
+											<div class="question">
+							<p></p><p>Czy do dorobku na nauczyciela dyplomowanego można 
+zaliczyć organizowanie wycieczek klasowych i opisać w § 8 ust.2 pkt. 4c?</p>
+						</div>
+						<div class="answer">
+							<p></p><p>Tak, jeżeli to w istotny sposób wpłynęło na poszerzenia
+ działań szkoły w zakresie dydaktyki, opieki i działań wychowawczych i 
+potrafi Pani to przed komisją udokumentować.</p>
+						</div>
+						
+												
+						<div id="experts" class="clearfix">
+							<p>Nasz zespół ekspertów:</p>
+							<span>
+							<a title="Małgorzata Łoskot" 
+href="http://literka.pl/zapytaj_eksperta">Małgorzata Łoskot</a>         
+     <a title="Zenon Decyk" href="http://literka.pl/zapytaj_eksperta">Zenon
+ Decyk</a>							</span>
+						</div>
+						
+						<ul class="bottomOptions clearfix">
+							<li><a href="http://literka.pl/zapytaj_eksperta#form" 
+title="Zadaj pytanie" class="ask">Zadaj pytanie</a></li>
+							<li><a title="Zobacz wszystkie" class="seeAll button" 
+href="http://literka.pl/pytania_i_odpowiedzi">Zobacz wszystkie</a></li>
+						</ul>
+					</div>
+			</div>	
+			<!-- END - Ekspert odpowiada BOX -->
+			
+
+</div>
+		<!-- END - środkowa kolumna -->
+
+		<!-- prawa kolumna -->
+		<div id="colRight" class="clearfix">
+    
+          
+			<div id="search" class="box">
+			
+                <div id="tabContainer">
+				<ul id="tabs" class="clearfix">
+					<li class="tab active"><a href="#tab1-tab" id="searchScenarios" 
+class="active" title="Bank scenariuszy">Bank scenariuszy</a></li>
+					<li class="tab"><a href="#tab2-tab" id="searchSite" title="Serwis">Serwis</a></li>
+					<li class="tab"><a href="#tab3-tab" id="searchShop" title="Sklep">Sklep</a></li>
+					<li class="tab"><a href="#tab4-tab" id="searchForum" title="Forum">Forum</a></li>
+				</ul>
+				<div id="searchForm">
+				
+				<div id="tab1" class="content">
+					<form action="/article/searchbank" method="get">
+						<fieldset>
+							<input onfocus="changeThis(this);" onblur="changeThisBack(this);"
+ name="query" value="Scenariusze" class="searchInput text" type="text">
+							<input name="search" value="Szukaj" 
+src="Literka.pl_pliki/searchButton.png" class="searchButton" 
+type="image">
+						</fieldset>
+					</form>
+				</div>
+
+				<div style="display: none;" id="tab2" class="content">
+					<form action="/article/searchall" method="get">
+						<fieldset>
+							<input onfocus="changeThis(this);" onblur="changeThisBack(this);"
+ name="query" value="Artykuły i pliki" class="searchInput text" 
+type="text">
+							<input name="search" value="Szukaj" 
+src="Literka.pl_pliki/searchButton.png" class="searchButton" 
+type="image">
+						</fieldset>
+					</form>
+				</div>
+				
+				<div style="display: none;" id="tab3" class="content">
+					<form action="/shop_search" method="get">
+						<fieldset>
+							<input onfocus="changeThis(this);" onblur="changeThisBack(this);"
+ name="query" value="Produkty" class="searchInput text" type="text">
+							<input name="search" value="Szukaj" 
+src="Literka.pl_pliki/searchButton.png" class="searchButton" 
+type="image">
+						</fieldset>
+					</form>
+				</div>
+				
+				<div style="display: none;" id="tab4" class="content">
+					<form 
+action="http://literka.pl/forum/search.php?terms=all&amp;author=&amp;sc=1&amp;sf=all&amp;sr=posts&amp;sk=t&amp;sd=d&amp;st=0&amp;ch=300&amp;t=0&amp;submit=Szukaj"
+ method="get">
+						<fieldset>
+							<input onfocus="changeThis(this);" onblur="changeThisBack(this);"
+ name="keywords" value="Tematy i posty" class="searchInput text" 
+type="text">
+							<input name="search" value="Szukaj" 
+src="Literka.pl_pliki/searchButton.png" class="searchButton" 
+type="image">
+						</fieldset>
+					</form>
+				</div>
+				
+				
+				</div>
+				
+				</div>
+				
+			</div>
+			
+		    <script type="text/javascript">
+			// <![CDATA[
+				
+			$(document).ready(function () {
+				$('#tabs').tabify();
+			});
+					
+			// ]]>
+		    </script>
+		  <!--<a href="/media/file/id/741"><img src="/images/zmiany_w_karcie_nauczyciela_1.gif" /></a>      <br/>-->
+        <img src="Literka.pl_pliki/rozmowa_miesiaca.gif">  <div 
+id="interview_month">
+    <a href="http://literka.pl/3/38298/paradoks_szkolnej_profilaktyki"><b>Paradoks
+ szkolnej profilaktyki</b><br><br><p><strong>Rozmowa z Mieczysławem 
+Wojciechowskim* o działaniach wychowawczo-profilaktycznych szkoły, o 
+tym, jak rozmawiać z uczniami o zagrożeniach oraz o współpracy z 
+rodzicami w zakresie profilaktyki.</strong></p></a>    <br><br>
+    <ul>
+      <li><a 
+href="http://literka.pl/3/38298/paradoks_szkolnej_profilaktyki"><b>Czytaj
+ całość</b></a> lub <a 
+href="http://literka.pl/kategoria/aktualnosci/1156/1"><b>zobacz 
+wszystkie »</b></a></li>
+    </ul>
+  </div>
+      
+      <!-- nawigacja Centrum doskonalenia -->
+
+            <div id="navCD" class="box clearfix" style="border-bottom: 
+1px solid rgb(220, 220, 220);">
+              <h3><a title="Centrum Awansu Zawodowego" href="">Centrum 
+Awansu Zawodowego</a></h3>
+              <ul>
+                <li><a 
+href="http://literka.pl/kategoria/aktualnosci/1154/1"><span>&nbsp;</span>
+ Wydarzenia edukacyjne</a></li>
+                <li><a href="http://literka.pl/praca-dla-nauczyciela"><span>&nbsp;</span>
+ Giełda pracy</a>                    <ul class="subNav clearfix">
+                      <li><a 
+href="http://literka.pl/oferty-pracy-dla-nauczycieli">Oferty pracy</a></li>
+                      <li><a 
+href="http://literka.pl/szukam-pracy-dla-nauczyciela">Szukam pracy</a></li>
+                    </ul>
+				</li>
+                <li><a 
+href="http://literka.pl/kategoria/aktualnosci/1155/1"><span>&nbsp;</span>
+ Konkursy</a></li>
+                <li>
+					<a href="http://literka.pl/kategoria/aktualnosci/1157/1"><span>&nbsp;</span>
+ Interaktywna szkoła</a>					<ul class="subNav clearfix">
+						<li><a href="http://literka.pl/article/show/id/37238">Jak dobrać 
+właściwe rozwiązanie interaktywne</a></li>
+                    </ul>
+				</li>
+				
+			  </ul>
+            </div>
+            
+      <!-- END - nawigacja Centrum doskonalenia -->	      
+		  <a href="http://literka.pl/kategoria/obowiazkowe_dokumenty/79/2" 
+title="Centrum Awansu Zawodowego"><img alt="Centrum Awansu Zawodowego" 
+src="Literka.pl_pliki/literka_caz.gif"></a>
+		
+							
+<br>
+<div id="scenariosBox" class="box">
+  <div>
+    <a href="http://literka.pl/forum/index.php?sid="><img 
+src="Literka.pl_pliki/headerForum.png" alt="Z życia forum"></a>
+  </div>
+	<div class="clearfix boxContent">
+
+    <ol class="clearfix">
+            <li class="clearfix"><dl class="clearfix"><dt>
+        <a href="http://literka.pl/forum/viewtopic.php?f=1&amp;t=12058" 
+title="">Spotkanie klasowe po latach...</a>
+        <br>
+        <span style="font-size: 11px; font-weight: normal; color: 
+rgb(170, 170, 170);">Może jakiś ciekawy wiersz o życiu mi ktoś podpowie?</span>
+        <br>
+        </dt><h4 class=""><span class="date">Wysłany: 2010-04-26 17:55 
+przez <a 
+href="http://literka.pl/forum/memberlist.php?mode=viewprofile&amp;u=31827"
+ title="dronka">dronka</a>  na forum <a 
+href="http://literka.pl/forum/viewforum.php?f=1" title="gadaniec">gadaniec</a></span></h4>
+      </dl></li>
+            <li class="clearfix"><dl class="clearfix"><dt>
+        <a href="http://literka.pl/forum/viewtopic.php?f=2&amp;t=12059" 
+title="">Dodatek za wychowawstwo</a>
+        <br>
+        <span style="font-size: 11px; font-weight: normal; color: 
+rgb(170, 170, 170);">Mam pytanie, jak to jest z dodatkiem za 
+wychowawstwo w czasie zwolnien...</span>
+        <br>
+        </dt><h4 class=""><span class="date">Wysłany: 2010-04-25 19:52 
+przez <a 
+href="http://literka.pl/forum/memberlist.php?mode=viewprofile&amp;u=3988"
+ title="JAMS">JAMS</a>  na forum <a 
+href="http://literka.pl/forum/viewforum.php?f=2" title="Pomoc, Szukam, 
+Potrzebuję">Pomoc, Szukam, Potrzebuję</a></span></h4>
+      </dl></li>
+            <li class="clearfix"><dl class="clearfix"><dt>
+        <a href="http://literka.pl/forum/viewtopic.php?f=3&amp;t=12057" 
+title="">mianowanie - kilka pytań</a>
+        <br>
+        <span style="font-size: 11px; font-weight: normal; color: 
+rgb(170, 170, 170);">[quote=&amp;quot;luxmen&amp;quot;:3ur3jmx1][color=#408000:3ur3jmx1]Ten...</span>
+        <br>
+        </dt><h4 class=""><span class="date">Wysłany: 2010-04-25 19:47 
+przez <a 
+href="http://literka.pl/forum/memberlist.php?mode=viewprofile&amp;u=19704"
+ title="malgala">malgala</a>  na forum <a 
+href="http://literka.pl/forum/viewforum.php?f=3" title="Awans zawodowy">Awans
+ zawodowy</a></span></h4>
+      </dl></li>
+            <li class="clearfix"><dl class="clearfix"><dt>
+        <a href="http://literka.pl/forum/viewtopic.php?f=3&amp;t=12057" 
+title="">mianowanie - kilka pytań</a>
+        <br>
+        <span style="font-size: 11px; font-weight: normal; color: 
+rgb(170, 170, 170);">Luxmen- na obserwację lekcji do opiekuna możesz 
+sobie biegać tak częst...</span>
+        <br>
+        </dt><h4 class=""><span class="date">Wysłany: 2010-04-25 18:19 
+przez <a 
+href="http://literka.pl/forum/memberlist.php?mode=viewprofile&amp;u=66028"
+ title="maj27">maj27</a>  na forum <a 
+href="http://literka.pl/forum/viewforum.php?f=3" title="Awans zawodowy">Awans
+ zawodowy</a></span></h4>
+      </dl></li>
+          </ol>  
+    <br class="fix_clear">
+	 <a class="seeAll button" title="Zobacz wszystkie" 
+href="http://literka.pl/forum/index.php?sid=">Idź do forum</a>				
+	</div>
+</div>        
+			
+<!-- LEKTURY OBWIĄZKOWE -->
+			<div id="shopPromo" class="box">
+				<a href="http://literka.pl/sklep" title="Lektury obowiązkowe"><h3 
+class="boxTitle">Lektury obowiązkowe</h3></a>
+				<ul class="boxContent clearfix">
+					
+					<li class="shopItem">
+						<div>
+							<ul>
+							                                    <li class="productImg"><a 
+title="Prezentacja dorobku zawodowego przed komisją " 
+href="http://literka.pl/karta_produktu/17"><img title="Prezentacja 
+dorobku zawodowego przed komisją " alt="Prezentacja dorobku zawodowego 
+przed komisją " src="Literka.pl_pliki/www_003.htm"></a></li>
+                                								<li class="productTitle"><a 
+title="Prezentacja dorobku zawodowego przed komisją " 
+href="http://literka.pl/karta_produktu/17"><strong>Prezentacja dorobku 
+zawodowego przed komisją </strong></a></li>
+								<li class="productAuthor">Cena: 35,00zł</li>
+							</ul>
+						</div>
+					</li>
+					
+					<li class="shopItem">
+						<div>
+							<ul>
+							                                    <li class="productImg"><a 
+title="Karta Nauczyciela 2010 wraz z komentarzem" 
+href="http://literka.pl/karta_produktu/16"><img title="Karta Nauczyciela
+ 2010 wraz z komentarzem" alt="Karta Nauczyciela 2010 wraz z 
+komentarzem" src="Literka.pl_pliki/www_002.htm"></a></li>
+                                								<li class="productTitle"><a 
+title="Karta Nauczyciela 2010 wraz z komentarzem" 
+href="http://literka.pl/karta_produktu/16"><strong>Karta Nauczyciela 
+2010 wraz z komentarzem</strong></a></li>
+								<li class="productAuthor">Cena: 35,00zł</li>
+							</ul>
+						</div>
+					</li>
+					
+					<li class="shopItem last">
+						<div>
+							<ul>
+							                                    <li class="productImg"><a 
+title="Szkolna ofiara agresji rówieśniczej" 
+href="http://literka.pl/karta_produktu/15"><img title="Szkolna ofiara 
+agresji rówieśniczej" alt="Szkolna ofiara agresji rówieśniczej" 
+src="Literka.pl_pliki/www.htm"></a></li>
+                                								<li class="productTitle"><a 
+title="Szkolna ofiara agresji rówieśniczej" 
+href="http://literka.pl/karta_produktu/15"><strong>Szkolna ofiara 
+agresji rówieśniczej</strong></a></li>
+								<li class="productAuthor">Cena: 45,10zł</li>
+							</ul>
+						</div>
+					</li>
+								</ul>
+				<div class="seeAll">
+				<a title="Przejdź do sklepu" href="http://literka.pl/sklep">Przejdź 
+do sklepu</a>				</div>
+				<br class="fix_clear">
+				<br class="fix_clear">
+			</div>
+			
+			<br class="fix_clear">
+<!-- END - LEKTURY OBWIĄZKOWE -->			
+		</div>
+		<!-- END - prawa kolumna -->
+
+		</div>
+	<div id="footer" class="clearfix">
+		<ul class="clearfix">
+		    <li><a title="O nas" href="http://literka.pl/czytaj/77/1">O nas</a></li>
+		    <li><a title="Reklama" href="http://literka.pl/czytaj/78/1">Reklama</a></li>
+			<li><a title="Strona główna" href="http://literka.pl/">Strona główna</a></li>
+			<li><a title="Mapa serwisu" href="http://literka.pl/mapa_strony">Mapa
+ serwisu</a></li>
+			<li><a title="Kontakt" href="http://literka.pl/czytaj/23/1">Kontakt</a></li>
+			<li><a title="Polityka prywatności" 
+href="http://literka.pl/czytaj/22/1">Polityka prywatności</a></li>
+		</ul>
+		<p>Serwis Literka.pl jest własnością firmy Wydawnictwo FORUM Sp. z 
+o.o. Wszystkie artykuły i publikacje znajdujące się na naszych stronach 
+są chronione prawem autorskim. Kopiowanie, publikowanie i 
+rozpowszechnianie bez naszej zgodny jest zabronione. Prawa autorskie do 
+publikacji posiadają autorzy artykułów.</p>
+	</div>
+	
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="Literka.pl_pliki/ga.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-722307-33");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+<script src="Literka.pl_pliki/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-3305753-1";
+urchinTracker();
+</script>
+
+<div style="display: none;" id="tooltip"><h3></h3><div class="body"></div><div
+ class="url"></div></div></body></html>

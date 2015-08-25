@@ -1,0 +1,14 @@
+.gsc-result:hover {
+  background:#eeeeee;
+}
+
+.gsc-result a {
+  color:#000000;
+  #border-bottom:1px solid #aaaaaa;
+}
+
+.func_box
+{
+  position:absolute;
+  margin:35px 0 0 370px;
+}

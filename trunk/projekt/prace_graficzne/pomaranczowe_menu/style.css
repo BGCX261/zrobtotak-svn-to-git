@@ -1,0 +1,46 @@
+@charset "utf-8";
+div#top_10, div#top_10 #heading_top_10, div#top_10 #content_top_10, div#top_10 #bottom_top_10, div#top_10 #heading_top_10 h2, div#top_10 #heading_top_10 h2, div#top_10 #content_top_10 ul, div#top_10 #content_top_10 li, div#top_10 #content_top_10 li a, div#top_10 #content_top_10 li a:hover  {margin:0; padding:0;}
+
+div#top_10 {
+	width: 225px;
+}
+div#top_10 #heading_top_10{
+height:34px; background:url(images/top_10_heading.png) top no-repeat;
+padding-top:10px;
+}
+div#top_10 #content_top_10{
+	background:url(images/top_10_slice.png) top repeat-y;
+}
+div#top_10 #bottom_top_10{
+height:28px; background:url(images/top_10_buttom.png) bottom no-repeat;		
+}
+
+div#top_10 #heading_top_10 h2{
+font-size:14px;	
+display:block !important;  display:inline-block;
+margin-left:10px;
+padding-left:27px;
+background:url(images/heading_icon.png) no-repeat;
+color:#FFF;
+}
+div#top_10 #content_top_10 ul{
+	padding-left:10px;
+}
+div#top_10 #content_top_10 li{
+	list-style:none;
+	background:url(images/black_icon.png) no-repeat;
+	padding-left:27px;
+	padding-right:4px;
+	
+}
+
+div#top_10 #content_top_10 li a{
+text-decoration:none;	
+color:#000;
+font-weight:400;
+}
+
+div#top_10 #content_top_10 li a:hover{
+text-decoration:none;	
+color:#666;
+}

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>sfAssetsLibraryPlugin</name>
+ <channel>pear.symfony-project.com</channel>
+ <summary>Full-featured multimedia asset library plugin</summary>
+ <description>The `sfAssetsLibraryPlugin` is a full-featured multimedia asset library plugin. Not only does it allow you to upload and organize your media files (images, PDF documents, Flash objects, and so on) via a web interface, it also stores metadata about each file for easy retrieval or automated copyright and legend inclusion. It is the perfect companion for rich text editors like TinyMCE.</description>
+ <lead>
+  <name>François Zaninotto</name>
+  <user>fzaninotto</user>
+  <email>francois.zaninotto@symfony-project.com</email>
+  <active>yes</active>
+ </lead>
+ <developer>
+  <name>Gabriele Santini</name>
+  <user>blacksun</user>
+  <email />
+  <active>yes</active>
+ </developer>
+ <developer>
+  <name>Massimiliano Arione</name>
+  <user>garak</user>
+  <email />
+  <active>yes</active>
+ </developer>
+ <date>2010-04-06</date>
+ <time>15:18:54</time>
+ <version>
+  <release>0.9.4</release>
+  <api>0.9.4</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.symfony-project.com/license">MIT license</license>
+ <notes>
+-
+ </notes>
+ <contents>
+  <dir name="/">
+   <file md5sum="79b8dc4a955f20d40a4540e97e34f574" name="config/schema.yml" role="data" />
+   <file md5sum="e5416480bba15217c94d19a0d807be42" name="config/config.php" role="data" />
+   <file md5sum="1cc5275a629f5204bce4529c956edf47" name="lib/helper/sfAssetHelper.php" role="data" />
+   <file md5sum="6ccef3d3176478284ee4ba868290e650" name="lib/model/om/BasesfAssetFolderPeer.php" role="data" />
+   <file md5sum="1f575261ca211d1c16c8a56740946a6a" name="lib/model/om/BasesfAssetFolder.php" role="data" />
+   <file md5sum="43205909f59f86cb86034b254eca4151" name="lib/model/om/BasesfAssetFolderNestedSetPeer.php" role="data" />
+   <file md5sum="3842ac0ef9d1e0e1572e8c9af3fd3534" name="lib/model/om/BasesfAssetFolderNestedSet.php" role="data" />
+   <file md5sum="2cd0a0c9baf9aaf460b700757565495a" name="lib/model/om/BasesfAssetPeer.php" role="data" />
+   <file md5sum="191550c22f30e537494a8737bd4c7238" name="lib/model/om/BasesfAsset.php" role="data" />
+   <file md5sum="4503dc551ab73156e9f91ee3f76a35e3" name="lib/model/map/sfAssetFolderTableMap.php" role="data" />
+   <file md5sum="40199a1b313bb171391258202bd6fc91" name="lib/model/map/sfAssetTableMap.php" role="data" />
+   <file md5sum="ff2ea2f8b6649b88b3d8b3de71b603ca" name="lib/model/sfAssetFolderPeer.php" role="data" />
+   <file md5sum="99708716c23b124d2cd14976ba733853" name="lib/model/sfAssetFolder.php" role="data" />
+   <file md5sum="c243310631edb30cf30b5d9f9071b819" name="lib/model/sfAssetPeer.php" role="data" />
+   <file md5sum="8c14e285ad7c47331edd1efa04488585" name="lib/model/sfAsset.php" role="data" />
+   <file md5sum="260d184e49545689d30df9e8f184e3d9" name="lib/task/sfAssetSynchronizeTask.class.php" role="data" />
+   <file md5sum="bac4296363eff7516a5a352aa3eec3c7" name="lib/task/sfAssetCreateRootTask.class.php" role="data" />
+   <file md5sum="6adf13f29b44f226e9bb70c5fe6d1eb7" name="lib/form/base/BasesfAssetFolderForm.class.php" role="data" />
+   <file md5sum="8b8509ad2b357821520189ae1726a605" name="lib/form/base/BasesfAssetForm.class.php" role="data" />
+   <file md5sum="fc7c414fd3d76353b5c98cae3b531f87" name="lib/form/sfWidgetFormSchemaFormatterAsset.class.php" role="data" />
+   <file md5sum="861aaccfadca0e189a430eed27d8e603" name="lib/form/sfAssetFolderForm.class.php" role="data" />
+   <file md5sum="84a83e80d2cd0dedbe2ab98c74beae28" name="lib/form/sfAssetReplaceForm.class.php" role="data" />
+   <file md5sum="bbab3751885653411b76c9625585b95f" name="lib/form/sfWidgetFormSchemaFormatterAssets.class.php" role="data" />
+   <file md5sum="3270504ce111b6cfe78e9503f32b0d5e" name="lib/form/sfAssetForm.class.php" role="data" />
+   <file md5sum="e699bc51df8fb8c5236403ec84f9a2cd" name="lib/form/sfAssetFolderMoveForm.class.php" role="data" />
+   <file md5sum="da5421dc40268bfdada83b38d6986b7e" name="lib/form/sfAssetsForm.class.php" role="data" />
+   <file md5sum="a8c182f7a754a7339cd731073a7c0b73" name="lib/form/sfAssetFolderRenameForm.class.php" role="data" />
+   <file md5sum="0a82c01852efe6e911ce38610df1ac9b" name="lib/form/sfAssetMoveForm.class.php" role="data" />
+   <file md5sum="4557b39981095c94df6e414effae6dbb" name="lib/form/sfAssetRenameForm.class.php" role="data" />
+   <file md5sum="f51c78f6890c2e954f5c60eb3e777acd" name="lib/widget/sfWidgetFormAssetInput.class.php" role="data" />
+   <file md5sum="e63d89b288b241caca4d7324ee507911" name="lib/filter/base/BasesfAssetFolderFormFilter.class.php" role="data" />
+   <file md5sum="f8be3a4196dc1f78e38e2da6cd22f79d" name="lib/filter/base/BasesfAssetFormFilter.class.php" role="data" />
+   <file md5sum="fa96c8396197345cab4d8af719cb6fa3" name="lib/filter/sfAssetFolderFormFilter.class.php" role="data" />
+   <file md5sum="8d80e21ec32dc230e2ec3b8911855e56" name="lib/filter/sfAssetFormFilter.class.php" role="data" />
+   <file md5sum="e583d31ed1889f3d61393bb255bace56" name="lib/sfAssetException.class.php" role="data" />
+   <file md5sum="8928c66883539ed394f1ec5ff2f2e4e5" name="lib/sfAssetRouting.php" role="data" />
+   <file md5sum="72d07812095b6046a21f54e4346b3764" name="lib/sfAssetsLibraryTools.class.php" role="data" />
+   <file md5sum="7989d195c11d3a97f46ccd31c0f625d0" name="modules/sfAsset/i18n/sfAsset.it.xml" role="data" />
+   <file md5sum="14f3f8dc735f34199a450c553970b125" name="modules/sfAsset/i18n/sfAsset.fr.xml" role="data" />
+   <file md5sum="8c41c92084f6c28a2872bc13c6c91590" name="modules/sfAsset/i18n/sfAsset.de.xml" role="data" />
+   <file md5sum="c349c9eabecef04d68ec0090d36effdc" name="modules/sfAsset/actions/actions.class.php" role="data" />
+   <file md5sum="4e6b9d86143611c3ecb6459f085ecd67" name="modules/sfAsset/config/view.yml" role="data" />
+   <file md5sum="53f7993f80991380cd8a409e6f49fa26" name="modules/sfAsset/lib/BasesfAssetActions.class.php" role="data" />
+   <file md5sum="5db6acfca44fefb1a2402329bd3872d4" name="modules/sfAsset/templates/moveFolderSuccess.php" role="data" />
+   <file md5sum="d5d7e63bf0ad7e22e318389f12d60a96" name="modules/sfAsset/templates/renameFolderSuccess.php" role="data" />
+   <file md5sum="d41d8cd98f00b204e9800998ecf8427e" name="modules/sfAsset/templates/_edit_header.php" role="data" />
+   <file md5sum="4d5fc52f1a34a96f4071b2934e181646" name="modules/sfAsset/templates/_sidebar_search.php" role="data" />
+   <file md5sum="b902e5c51ef0275b5bd7bb7ef272b32e" name="modules/sfAsset/templates/searchSuccess.php" role="data" />
+   <file md5sum="d41d8cd98f00b204e9800998ecf8427e" name="modules/sfAsset/templates/_search_custom.php" role="data" />
+   <file md5sum="d4a29c41997bf0ccf88178b73495bbca" name="modules/sfAsset/templates/popupLayout.php" role="data" />
+   <file md5sum="76b8f9e902bebe4eb888fa8c84fb6c3b" name="modules/sfAsset/templates/massUploadSuccess.php" role="data" />
+   <file md5sum="d41d8cd98f00b204e9800998ecf8427e" name="modules/sfAsset/templates/_edit_form_custom.php" role="data" />
+   <file md5sum="77160b9ff6609aa76e5b63fd629e5742" name="modules/sfAsset/templates/tinyConfigMediaSuccess.php" role="data" />
+   <file md5sum="d41d8cd98f00b204e9800998ecf8427e" name="modules/sfAsset/templates/_edit_footer.php" role="data" />
+   <file md5sum="17acd311fc8f48db88fa981687666323" name="modules/sfAsset/templates/_sidebar_list.php" role="data" />
+   <file md5sum="60ff10bc12a9e401913145dc0d6b012d" name="modules/sfAsset/templates/listSuccess.php" role="data" />
+   <file md5sum="391da6bc7a93d8732e916c7e58dc20c2" name="modules/sfAsset/templates/_edit_actions.php" role="data" />
+   <file md5sum="d41d8cd98f00b204e9800998ecf8427e" name="modules/sfAsset/templates/_create_folder_header.php" role="data" />
+   <file md5sum="5eca258dc0545543aa24d05c35d542a1" name="modules/sfAsset/templates/_messages.php" role="data" />
+   <file md5sum="092abe24af50f761afda30c6b41c429a" name="modules/sfAsset/templates/_edit_form.php" role="data" />
+   <file md5sum="fa2b6d075f6797bd0ed194bc67857a3b" name="modules/sfAsset/templates/_list.php" role="data" />
+   <file md5sum="d41d8cd98f00b204e9800998ecf8427e" name="modules/sfAsset/templates/_create_folder_footer.php" role="data" />
+   <file md5sum="d41d8cd98f00b204e9800998ecf8427e" name="modules/sfAsset/templates/_search_header.php" role="data" />
+   <file md5sum="03589e63d7c969a9e5aa1ea660a08c9b" name="modules/sfAsset/templates/_sidebar_edit.php" role="data" />
+   <file md5sum="ce29a3a0cbad7c330ad346aa7caf9747" name="modules/sfAsset/templates/_asset.php" role="data" />
+   <file md5sum="88de12ff93037b6136f54854d0cd59cc" name="modules/sfAsset/templates/addQuickSuccess.php" role="data" />
+   <file md5sum="a66dd212c73eaccf3ff6293b11e59b75" name="modules/sfAsset/templates/editSuccess.php" role="data" />
+   <file md5sum="9652a5d76eb1bc443adac07dca6c113a" name="modules/sfAsset/templates/_sidebar_sort.php" role="data" />
+   <file md5sum="d41d8cd98f00b204e9800998ecf8427e" name="modules/sfAsset/templates/_search_footer.php" role="data" />
+   <file md5sum="d41d8cd98f00b204e9800998ecf8427e" name="modules/sfAsset/templates/_list_header.php" role="data" />
+   <file md5sum="63689121958a58c99a44f4c0992090bc" name="modules/sfAsset/templates/_thumbnail.php" role="data" />
+   <file md5sum="d41d8cd98f00b204e9800998ecf8427e" name="modules/sfAsset/templates/_list_footer.php" role="data" />
+   <file md5sum="3cd679a6df523503d412deef3649e4d4" name="modules/sfAsset/templates/createFolderSuccess.php" role="data" />
+   <file md5sum="b94c179975e6bbd9a320dea6ecc7b7ae" name="web/images/folder_open.png" role="data" />
+   <file md5sum="4095dc4c50035a6d2e0828aaa52f6f1e" name="web/images/folder_delete.png" role="data" />
+   <file md5sum="817803239d5fc90497ba41cde92c5e75" name="web/images/page_delete.png" role="data" />
+   <file md5sum="4916f08cf952402163d8ece7a90c28a3" name="web/images/unknown.png" role="data" />
+   <file md5sum="1657083adaa373fe595f3e6917389b1f" name="web/images/text_linespacing.png" role="data" />
+   <file md5sum="fb299dd13df666516eabe16f59193383" name="web/images/folder_go.png" role="data" />
+   <file md5sum="83db143824ee25b6866f5619ebffc522" name="web/images/page_go.png" role="data" />
+   <file md5sum="a81fa78d754fae7b3a71026356e3ee27" name="web/images/magnifier.png" role="data" />
+   <file md5sum="99888590ef147031f18bec42533906a6" name="web/images/delete.png" role="data" />
+   <file md5sum="d465433911233f1746778931be8d8fe7" name="web/images/ppt.png" role="data" />
+   <file md5sum="dbaec06786fe05e85a306aaabe68003c" name="web/images/html.png" role="data" />
+   <file md5sum="b152895afab84e6f3dfa7a58f26a491f" name="web/images/doc.png" role="data" />
+   <file md5sum="a4adac89c75db47e4f1b423c948a7998" name="web/images/images.png" role="data" />
+   <file md5sum="27724a9553c32e71ed5509387ba2f823" name="web/images/xls.png" role="data" />
+   <file md5sum="36e70f3d7035b1d10e970c1dc399499a" name="web/images/bin.png" role="data" />
+   <file md5sum="9f68f5a5f501145348af0bb490b9f135" name="web/images/pdf.png" role="data" />
+   <file md5sum="3d1bfcf55d8f10f8ea00d314778350a6" name="web/images/folder.png" role="data" />
+   <file md5sum="5a305ec12ae3d94bc179a254b55c56da" name="web/images/txt.png" role="data" />
+   <file md5sum="f02d2af80474a37d6c21c3aad6cc8ec6" name="web/images/folder_edit.png" role="data" />
+   <file md5sum="06bbb8e4be4588635a6bd742669e096e" name="web/images/archive.png" role="data" />
+   <file md5sum="47370a0500cb9048a5110bd04047bdab" name="web/images/page_edit.png" role="data" />
+   <file md5sum="e9d1e005bd85c801fbd463b7487895c5" name="web/images/image.png" role="data" />
+   <file md5sum="4fd0ba998b55abd333f81f9318f89748" name="web/images/folder_add.png" role="data" />
+   <file md5sum="196aa29c950f3eaf8a6f1506eec0a132" name="web/images/up.png" role="data" />
+   <file md5sum="fbcb11a571906d79fbb2affa64643fdc" name="web/images/edit.png" role="data" />
+   <file md5sum="7a5d8fdb91d6497b9962343c5649868e" name="web/images/filenew.png" role="data" />
+   <file md5sum="e9e4f2ed9db0b629e66bc1c2e6a3357e" name="web/images/image_add.png" role="data" />
+   <file md5sum="6aba4aba2d601a053e77ccd1aa70ad12" name="web/images/page_refresh.png" role="data" />
+   <file md5sum="7f722eb3971461237ceb303ccfd79b81" name="web/css/media.css" role="data" />
+   <file md5sum="af600941cf4b7c7a76f32976b43d8d55" name="web/js/main.js" role="data" />
+   <file md5sum="4e4fa25d470a29c08cfc937951807732" name="web/js/popup.js" role="data" />
+   <file md5sum="a594d4f10cc0c5b59a130f6507f54707" name="LICENSE" role="data" />
+   <file md5sum="feef2cd793d0faae813541d4bf30dde0" name="README" role="data" />
+   <file md5sum="d50c3734f335a8a5508f43c8149207b5" name="package.xml.error" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+   <package>
+    <name>symfony</name>
+    <channel>pear.symfony-project.com</channel>
+    <min>1.3.0</min>
+    <max>1.5.0</max>
+    <exclude>1.5.0</exclude>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.9.4</release>
+    <api>0.9.4</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <license uri="http://www.symfony-project.com/license">MIT license</license>
+   <date>2010-04-06</date>
+   <notes>
+* garak: First 1.3/1.4 release
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.9.3</release>
+    <api>0.9.3</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <license uri="http://www.symfony-project.com/license">MIT license</license>
+   <date>2009-04-20</date>
+   <notes>
+* francois: Removed unused method
+* francois: Fixed popup usage
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.9.2</release>
+    <api>0.9.2</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <license uri="http://www.symfony-project.com/license">MIT license</license>
+   <date>2009-04-20</date>
+   <notes>
+* francois: Fixed typo in folder details
+* francois: Implemented synchronize task
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.9.1</release>
+    <api>0.9.1</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <license uri="http://www.symfony-project.com/license">MIT license</license>
+   <date>2009-03-16</date>
+   <notes>
+* francois: 1.2 compatibility (WIP)
+* francois: Converted README to Markdown
+* francois: Fixed wrong exception parameter
+* francois: Fixed untranslated exception messages
+   </notes>
+  </release>
+ </changelog>
+</package>
